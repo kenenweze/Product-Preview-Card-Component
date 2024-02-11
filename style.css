@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 90%;
+    max-width: 670px;
+    display: flex;
+}
+
+@media (min-width: 481px) {
+    main {
+        margin: 80px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.top {
+    width: 100%;
+    padding: 0;
+}
+
+picture {
+    border-radius: 20px;
+}
+
+#essence {
+    max-width: 100%;
+    display: block;
+    border-radius: 20px 0 0 20px;
+}
+
+@media (max-width: 480px) {
+    #essence {
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+.bottom {
+    width: 100%;
+    background: hsl(0, 0%, 100%);
+    padding: 25px;
+    border-radius: 0 20px 20px 0;
+}
+
+@media (max-width: 480px) {
+    .bottom {
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+p#perf,
+    p#chanel {
+        font-family: Helvetica, sans-serif;
+        color: hsl(228, 12%, 48%);
+    }
+    
+    p#perf {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    p#chanel {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        margin-bottom: 20px;
+    }
+    
+    h4 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.3rem;
+        line-height: 0.9em;
+        margin: auto;
+    }
+    
+    span {
+        font-family: Times, serif;
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: rgb(10, 107, 92);
+    }
+    
+    sup {
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+        margin-left: 15px;
+    }
+
+a {
+    display: block;
+    height: 45px;
+    background-color: rgb(10, 107, 92);
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: rgb(5, 51, 44);
+}
+
+.icon {
+    padding-right: 10px;
+}
